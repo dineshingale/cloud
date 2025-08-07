@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 .env
 
-git remote add origin https://github.com/dineshingale/cloud.git
