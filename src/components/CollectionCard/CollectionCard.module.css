@@ -1,0 +1,48 @@
+.card {
+  border: 1px solid #3f3f46;
+  background-color: #27272a;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.enterActive {
+  opacity: 1;
+  transform: translateY(0);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3f3f46;
+}
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+}
+.titleInput {
+  font-size: 1.25rem;
+  background: #3f3f46;
+  color: white;
+  padding: 0.25rem;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
