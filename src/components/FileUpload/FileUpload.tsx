@@ -7,7 +7,7 @@ import type { UploadableFile, FileUploadProps, FileType, MediaFile } from '../..
 import styles from './FileUpload.module.css';
 
 const CHUNK_SIZE = 5 * 1024 * 1024; // 5MB chunks
-const API_BASE_URL = 'http://localhost:3000/api'; // *** Replace with your Render.com backend URL ***
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'; 
 
 const FileUpload: React.FC<FileUploadProps> = ({ type, files, onFilesAdded, onPreview, onDelete }) => {
   const [isDragOver, setIsDragOver] = useState(false);
@@ -179,3 +179,4 @@ const FileUpload: React.FC<FileUploadProps> = ({ type, files, onFilesAdded, onPr
 export default FileUpload;
 
 
+//dinesh
